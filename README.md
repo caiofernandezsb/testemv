@@ -5,13 +5,14 @@ This project provides an Anagram Service and API developed for evaluation purpos
 ### Index
 
 1. [Requirements](#requirements)
-2. [Anagram Service](#anagram-service)
-3. [Usage](#usage)
-4. [Exception Handling](#exception-handling)
-5. [Contributing](#contributing)
-6. [API Endpoint](#api-endpoint)
-7. [API Usage](#api-usage)
-8. [Running Tests](#running-tests)
+2. [Project Configuration](#project-configuration)
+3. [Anagram Service](#anagram-service)
+4. [Usage](#usage)
+5. [Exception Handling](#exception-handling)
+6. [Contributing](#contributing)
+7. [API Endpoint](#api-endpoint)
+8. [API Usage](#api-usage)
+9. [Running Tests](#running-tests)
 
 ### Requirements
 
@@ -21,6 +22,27 @@ Ensure you have the following installed:
 - [Git](https://git-scm.com/)
 - [Gradle](https://gradle.org/install/)
 
+### Project Configuration
+
+In order to properly run the project in your local environment, follow the steps below:
+
+1.  **Clone the Project:**
+   git clone https://github.com/caiofernandezsb/testemv.git
+
+2. **Proceed to the Project Directory:**
+   cd testemv
+
+3. **Compile:**
+  ./gradlew build<br>
+
+*By using this command your computer is going to compile the project and create an executable JAR file*
+
+4. **Run:**
+  In order to initiate the Spring Boot app, use the following command:
+  ./gradlew bootRun<br>
+
+*The app will be available at http://localhost:8080*
+
 ### Anagram Service
 
 The Anagram Service offers functionality to check whether two words are anagrams. Anagrams are words or phrases formed by rearranging the letters of another, using all the original letters exactly once.
@@ -29,15 +51,11 @@ The Anagram Service offers functionality to check whether two words are anagrams
 
 To use the Anagram Service, follow these steps:
 
-1. **Clone the Anagram API project:**
-   git clone https://github.com/caiofernandezsb/testemv.git
-   cd testemv
-
-2. **Instantiate the anagram service:**
+1. **Instantiate the anagram service:**
    
    AnagramService anagramService = new AnagramService();
 
-3. **Check whether words are anagrams:**
+2. **Check whether words are anagrams:**
    
    String firstWord = "listen";<br>
    String secondWord = "silent";<br>
